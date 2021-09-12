@@ -9,6 +9,7 @@ function Customers() {
         (customers) => setCustomers(customers),
         () => console.log("customers fetched..", customers)
       );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [customers, setCustomers] = useState([]);
