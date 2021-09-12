@@ -16,6 +16,13 @@ function Customers() {
   return (
     <div>
       <h2>Customers</h2>
+      <ul>
+        {customers.map((customer) => (
+          <li key={customer.id}>
+            {customer.firstName} {customer.lastName}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
